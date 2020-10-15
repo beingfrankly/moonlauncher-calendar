@@ -9,13 +9,21 @@
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.67",
     "@types/react": "^16.9.52",
+    "@types/react-datepicker": "^3.1.1",
     "@types/react-dom": "^16.9.8",
+    "date-fns": "^2.16.1",
+    "dayjs": "^1.9.3",
     "react": "^16.14.0",
+    "react-datepicker": "^3.3.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3",
+    "react-simple-maps": "^2.1.2",
     "typescript": "^3.7.5"
   },
   "scripts": {
+    "build:tailwind": "tailwindcss build src/tailwind.css -o src/tailwind.output.css",
+    "prestart": "npm run build:tailwind",
+    "prebuild": "npm run build:tailwind",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,5 +43,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-simple-maps": "^1.0.3",
+    "autoprefixer": "^10.0.1",
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.9.2"
   }
 }
